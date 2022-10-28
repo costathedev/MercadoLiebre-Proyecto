@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+
+body {
+    /* padding: 5vw; Trae problemas dejarlo acá; moverlo a cada grupo principal. */
+    background-color: #ebebeb;
+}
+
+/* ------------------ HEADER ------------------  */
+header {
+    background-color: #EAC926;
+}
+
+.header-container {
+    /* padding: 5vw; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 48%;
+}
+
+.header-search-bar {
+    width: 48%;
+    margin-left: 8px;
+}
+
+.header-search-bar form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-search-bar form input {
+    width: 10px;
+    flex-grow: 1;
+    line-height: 1.6rem;
+    border: 0px black solid;
+    border-top-left-radius: 7%;
+    border-bottom-left-radius: 7%;
+    padding: 2px;
+    font-size: 0.7rem;
+}
+
+.header-search-bar form i {
+    line-height: 1.6rem;
+    border: 0px black solid;
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+    padding: 2px;
+    background-color: white;
+    color: gray;
+    font-size: 0.7rem;
+}
+
+/* .header-search-bar form button {
+    line-height: 1.6rem;
+    border: 0px black solid;
+    background-color: white;
+    color:gray;
+    border-radius: 6%;
+    padding: 2px;
+} */
+
+.header-subtitle {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.header-navigation-bar {
+    /* Se muestra desde tablet */
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Links de la Site nav-bar */
+.header-site-navbar a {
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+/* Links del Login nav-bar */
+.header-login-navbar a {
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.header-burguer-menu-container {
+    /* Se oculta desde tablet */
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.header-burguer-menu {
+    margin-top: 20px;
+    font-size: large;
+    color: white;
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+
+/* ------------------ MAIN ------------------  */
+main {
+    /* padding: 5vw; */
+    width: 90%;
+    margin: auto;
+}
+
+.home-banner {
+    width: 100%;
+}
+
+article img {
+    width: 100%;
+}
+
+.products-group {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-container {
+    margin-top: 10px;
+    background-color: white;
+    width: 100%;
+}
+
+.product-detail {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.product-truck {
+    color: #39b54a;
+    border: solid #39b54a 1px;
+    border-radius: 50%;
+
+    /* Tomado del pdf */
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+    transition: transform 500ms;
+}
+
+.product-truck:hover {
+    transform: rotateZ(-90deg);
+}
+
+.product-section {
+    font-size: 24px;
+    line-height: 3rem;
+    color: #666;
+}
+
+p {
+    font-size: 12px;
+}
+
+.product-amounts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 18px;
+    width: 30%;
+}
+
+.product-discount {
+    font-size: 16px;
+    color: #39b54a;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.product-description {
+    display: none;
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* ------------------ REGISTER ------------------  */
+.reg-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.reg-form-item {
+    width: 100%;
+    margin-top: 20px;
+    border: 0px;
+    padding: 7px;
+    border-radius: 10%;
+}
+
+.reg-label {
+    font-weight: bold;
+}
+
+.reg-perfil-de-usuario {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.radiobutton {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.reg-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.reg-un-interes {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    margin-right: 20px;
+}
+
+.reg-un-interes-text {
+    margin: 10px;
+}
+
+#foto-de-perfil {
+    width: 100%;
+}
+
+.btn-submit {
+    margin-top:40px;
+    background-color: #1259c3;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #0022AA;
+}
+
+.btn-reset {
+    background-color: white;
+}
+
+/* ------------------ FOOTER ------------------  */
+footer {
+    padding: 5vw;
+    text-align: center;
+
+    /* Hacemos que se muestre diferente para desktop */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-group {
+    /* Para mobile 100, para desktop 33 */
+    width: 100%;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+footer i:hover {
+    color:#EAC926;
+    /* color: #0022AA; */
+}
+
+.copyright {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+
+/* ------------------ MEDIA QUERIES ------------------  */
+/* Tablets */
+@media (min-width: 361px) {
+    .header-logo{
+        width: 30%;
+    }
+
+    .header-search-bar {
+        width: 30%;
+    }
+
+    .header-subtitle {
+        font-size: 1rem;
+        width: 33%;
+        flex-grow: 1;
+    }
+
+    .header-navigation-bar {
+        display: flex;
+    }
+
+    .header-burguer-menu-container {
+        /* Se muestra sólo en mobile*/
+        display: none;
+    }
+
+    .product-description {
+        /* display: block; */
+        /* Ahora estará oculta y sólo se mostrará con Hover */
+    }
+
+    article:hover .product-description {
+        display: block;
+    }
+
+    .product-container {
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+        /* Ahora estará oculto y sólo se mostrará con Hover */
+        width: 48%;
+    }
+
+    .product-container:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .reg-perfil-de-usuario {
+        justify-content: flex-start;
+    }
+
+    .reg-perfil-de-usuario label {
+        margin-right: 40px;
+    }
+
+    .btn-submit {
+        width: 200px;
+    }
+    
+    .btn-reset {
+        width: 200px;
+        margin-top:40px;
+        margin-left: 20px;    
+    }
+
+    *:required:invalid {
+        /* background-color: red; */
+        background-image: linear-gradient(to right, salmon, darkred );
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .product-container {
+        width: 24%;
+    }
+
+    .reg-form {
+        max-width: 70%;
+    }
+
+    .footer-group {
+        /* Para mobile 100, para desktop 33 */
+        width: 33%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
+/* Paleta de Colores::after
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+/* Tipografías:
+Familia: 'Roboto'
+*/
+
+/* Tamaños Tipográficos::after
+Cuerpos de texto: 12px;
+Titulares (Basado en tu última visita/Ofertas): 24px;
+Precios: 18px;
+Descuentos: 16px;
+Descripciones: 16px;
+*/
+
+/* Íconos: tomar de FontAwesome */
