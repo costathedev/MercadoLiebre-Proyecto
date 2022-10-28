@@ -3,10 +3,9 @@ const express = require('express');
 const path = require('path');
 
 
-const app = express(); // Para administrar el servidor web
-const puerto = process.env.PORT || 3001; // Puerto a utilizar para el servidor web
-const url = 'http://localhost'; // Url a utilizar para el servidor web
-
+const app = express(); 
+const puerto = process.env.PORT || 3001; 
+const url = 'http://localhost'; 
 
 app.use( express.static(path.resolve(__dirname, './public')));
 
@@ -50,7 +49,7 @@ app.get('/productos', (req, res) =>
 res.sendFile(path.resolve(__dirname, './views/productos.html'))
 )
 
-// POSTs
+
 app.post('/login', (req, res) => 
     res.redirect('/')
 )
