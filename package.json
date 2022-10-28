@@ -1,7 +1,7 @@
 {
   "name": "MercadoLiebre",
   "version": "1.0.0",
-  "description": "Proyecto de estudio de Carrito de Compras",
+  "description": "Proyecto mercadoliebre",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
